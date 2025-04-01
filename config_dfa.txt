@@ -1,0 +1,30 @@
+#
+# vjf
+States:
+q0, S
+q1
+q2, F
+q3
+#
+q4, F
+q5
+End
+Sigma:
+a
+b
+# 432
+#
+c
+End
+Transitions:
+q0, a, q1
+q4, c, q5
+q3, c, q1
+q0, b, q2
+q2, c, q2
+# 1
+q3, a, q4
+q1, b, q3
+q4, a, q4
+q5, b, q4
+End
